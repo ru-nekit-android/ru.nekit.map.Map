@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World!</string>
+    <string name="app_name">OSMDroidExample</string>
+    
+    <string name="choice_mapType_cycle">Cycle Map</string>
+    <string name="choice_mapType_road">Road Map</string>
+    <string name="choice_mapType_toast">Chosen map type: </string>
+    <string name="choice_mapType">Choose map type</string>
+    
+    <string name="aboutApp">This example was Created by Omer Zohar.\n</string>
+    <string name="aboutApp_gotoWebsite">Goto WebSite</string>
+    <string name="aboutApp_facebook_link">http://www.omerzohar.com/contact.html</string>
+    
+    <string name="property_curr_maptype">curr_maptype</string>
+    <string name="propertyFileName">propfile.prop</string>
+    
+    <string name="location_try_fix">Trying to get a fix on your location...</string>
+    <string name="location_try_fix_still">Still Trying to get a fix on your location...</string>
+    <string name="location_try_fix_no_success">Unable to get a your location. Make sure location services are on and try again later</string>
+    
+    <string name="map_menu_mapSelection">Set Map Type</string>
+    <string name="map_menu_about">About</string>
+    
+</resources>
