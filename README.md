@@ -1,0 +1,4 @@
+Map sample with overlay , build with osmdroid http://code.google.com/p/osmdroid/ + map.vl.ru tiles
+<table align="center" style="margin: 0 auto">  <thead><tr>    <th>Screenshots</th>  </tr></thead>  <tbody>
+<tr>    <td cellpadding="5" cellspacing="5"><img src="https://raw.github.com/ru-nekit-android/AndroidSampleList/master/screenshots/1.png"/></td> </tr><tr>    <td cellpadding="5" cellspacing="5"><img src="https://raw.github.com/ru-nekit-android/AndroidSampleList/master/screenshots/2.png"/></td> </tr>
+<tr>    <td cellpadding="5" cellspacing="5"><img src="https://raw.github.com/ru-nekit-android/AndroidSampleList/master/screenshots/3.png"/></td></tr></tbody></table>
