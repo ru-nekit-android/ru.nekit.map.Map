@@ -16,6 +16,7 @@ import ru.nekit.R;
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.Resources;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Paint.Align;
@@ -26,6 +27,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
+import android.view.Window;
 import android.widget.TextView;
 
 public class Map extends Activity 
@@ -51,6 +53,7 @@ public class Map extends Activity
 	@Override
 	public void onCreate(Bundle savedInstanceState) 
 	{
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		super.onCreate(savedInstanceState);
 		mMapType = loadLastUsedMapType();
 		setContentView(R.layout.mapview);
@@ -80,6 +83,7 @@ public class Map extends Activity
 		readAndDrawStations ();
 	}
 
+
 	class ResourceProxyImpl extends DefaultResourceProxyImpl {
 
 		private final Context mContext;
@@ -92,6 +96,7 @@ public class Map extends Activity
 		@Override
 		public String getString(string pResId) {
 			switch(pResId) {
+			case vl : return "vl";
 			case mapnik : return mContext.getString(R.string.mapnik);
 			case cyclemap : return mContext.getString(R.string.cyclemap);
 			case base : return mContext.getString(R.string.base);
@@ -196,6 +201,14 @@ public class Map extends Activity
 	{
 		mLocationOverlay.disableMyLocation();
 		super.onPause();
+	}
+
+	@Override
+	public void startManagingCursor(Cursor c) {
+		if (c == null) {
+			throw new IllegalStateException("cannot manage cursor: cursor == null");
+		}
+		super.startManagingCursor(c);
 	}
 
 	@Override
